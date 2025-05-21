@@ -37,7 +37,7 @@ function MovieDetails({
       async function getMovieDetails() {
         try {
           const res = await fetch(
-            `http://www.omdbapi.com/?apikey=${key}&i=${selectedId}`
+            `https://www.omdbapi.com/?apikey=${key}&i=${selectedId}`
           );
           if (!res.ok)
             throw new Error("Something went wrong with fetching movies");
