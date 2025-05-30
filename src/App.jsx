@@ -33,7 +33,7 @@ function App() {
   function handleDeleteWatched(id) {
     setWatched((watched) => watched.filter((movie) => movie.imdbID !== id));
   }
-<<<<<<< HEAD
+
   useEffect(
     function () {
       const controller = new AbortController();
@@ -73,8 +73,6 @@ function App() {
     },
     [query]
   );
-=======
->>>>>>> 67d417d (Updated file(s))
 
   function handleSelectMovie(id) {
     setSelectedId((selectedId) => (selectedId === id ? null : id));
